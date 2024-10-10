@@ -24,7 +24,7 @@ Before running this project, ensure you have the following installed on your loc
 1. **Clone this repository**:
 
     ```bash
-    git clone https://github.com/your-username/your-repository-name.git
+    git clone https://github.com/sutejym122/Object-Detection-Using-YOLOV3.git
     ```
 
 2. **Navigate into the project directory**:
@@ -55,16 +55,9 @@ Due to file size limitations, the `yolov3.weights` file is not included in the r
 
 2. **Place the `yolov3.weights` file in the `weights/` directory** of the project. If the `weights/` directory does not exist, create it.
 
-   Your folder structure should look like this:
-
-   ```
-   ├── weights/
-       └── yolov3.weights
-   ```
-
 ### Running the Project
 
-1. Ensure that you have an image file in the `images/` folder. You can replace `shelf.jpg` with your own image if desired.
+1. Ensure that you have an image file in the `images/` folder. You can replace `shelf.jpg` with your own image if desired and remember to update the image name in yolo_object_detection.py file
    
 2. Open a terminal and run the Python script for object detection:
 
@@ -73,24 +66,6 @@ Due to file size limitations, the `yolov3.weights` file is not included in the r
     ```
 
 3. After running the script, the processed image with bounding boxes will be saved as `output_image.jpg` in the project directory and displayed in a window.
-
-### Project Structure
-
-The project is organized into the following structure:
-
-```plaintext
-├── cfg/
-│   └── yolov3.cfg            # YOLO configuration file
-├── data/
-│   └── coco.names            # COCO dataset object names
-├── images/
-│   └── shelf.jpg             # Input images for object detection
-├── weights/
-│   └── yolov3.weights        # YOLOv3 pre-trained weights (not included, download manually)
-├── requirements.txt          # Python dependencies
-├── yolo_object_detection.py  # Main Python script for object detection
-└── README.md                 # Project documentation
-```
 
 ### Example Output
 
